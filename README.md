@@ -1,4 +1,4 @@
-#PROJE 1 Selection Sort
+# PROJE 1 Selection Sort
 
 ## Soru 1) [22,27,16,2,18,6] -> Insertion Sort
 
@@ -33,9 +33,9 @@ Burada dizinin elemanları en küçük eleman sırayla yer değiştirir. Bu işl
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#PROJE 2 Merge Sort
+# PROJE 2 Merge Sort
 
-## [16,21,11,8,12,22] -> Merge Sort
+## Soru 2) [16,21,11,8,12,22] -> Merge Sort
 
 ### a)Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
 
@@ -97,6 +97,40 @@ gibi bir formülasyon ortaya çıkar. Sürekli 2'ye bölünerek devam edeceği i
 Birleştirme aşaması: Daha sonra, bu küçük parçalar, sıralanmış bir dizi oluşturmak üzere birleştirilir. Her bir birleştirme işlemi, en kötü durumda, her elemanın bir kez karşılaştırılmasını gerektirir, 
 bu da birleştirme işleminin lineer zaman karmaşıklığına (n) sahip olacağı anlamına gelir.
 Bu sebeple ````O(nlogn)```` olur. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# PROJE 3 Binary Search Tree
+
+## Soru 3) [7,5,1,8,3,6,0,9,4,2] ->Binary Search Tree
+
+### [7,5,1,8,3,6,0,9,4,2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+Dizi çift eleman sayısına sahiptir bu sebeple ağacın bir tarafı daha fazla elemana sahip olacaktır. Binary Search Treede en üstte bulunan node Root olarak adlandırılır.
+Root’tan küçük değere sahip olan node’lar Root’un sol tarafında yer alır, Root’tan büyük değere sahip olan node’lar Root’un sağ tarafında yer alır.
+root x=7 olsun.
+````
+                      7
+                    /   \
+                   5     8
+                 /  \      \
+               1     6      9
+             /  \
+            0    3
+                /  \
+               2    4
+````
+1. adım 5<7, ağacın solunda yer alır.
+2. adım 1<7 ve 1<5 ağacın solunda ve 5 rakamının sol dalında yer alır.
+3. adım 8>7, ağacın sağında yer alır.
+4. adım 3<7 ve 3<5, 3>1 olduğundan ağacın solunda 1 rakamının sağ dalında yer alır.
+5. adım 6<7 ve 6>5 ağacın solunda 5 rakamının sağ dalında yer alır.
+6. adım 0<7, 0<5, 0<1 olduğundan ağacın solunda 1 rakamının solunda yer alır.
+7. adım 9>7 ve 9>8 ağacın sağında 8 rakamının sağ dalında yer alır.
+8. adım 4<7, 4<5, 4>1, 4>3 olduğundan ağacın solunda 3 rakamının sağ dalında yer alır.
+9. adım 2<7, 2<5, 2>1, 2<3 olduğundan ağacın solunda 3 rakamının sol dalında yer alır.
+
+
+
 
 
 
