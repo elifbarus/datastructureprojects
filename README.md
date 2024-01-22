@@ -31,7 +31,7 @@ Burada dizinin elemanları en küçük eleman sırayla yer değiştirir. Bu işl
 #PROJE 2 Merge Sort
 
 ## [16,21,11,8,12,22] -> Merge Sort
-<div>
+
 ### a)Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
 Diziyi bir anda sıralamak yerine küçük parçalara ayırarak sıralarsak. Daha iyi performans kazancı sağlarız ve çalışma süresi kısalır.
 
@@ -62,10 +62,10 @@ sağ parça: 8>12>22 --> [8,12,22]
 #### 6. adım sağ ve sol parça önce büyükten küçüğe sıralanır ve tek dizi haline geri getirilmiş olur:
 Soldaki elemanların en küçük olduğu biliniyor. Önce onlar karşılaştırılır ve sıralanır. 6<8. Sonra ortadaki elamanlar 11<12, en son sağdaki elemanlar karşılaştırılır 21<22 
 Bir araya getirilir: [6,8,11,12,21,22]
-</div>
 
-<div>
-### b)Big-O gösterimini yazınız.
+
+
+|### b)Big-O gösterimini yazınız.|
 Bu yöntemde dizi eleman sayısına n denirse dizi 2'ye bölünerek daha sonra tek eleman kalana kadar 2'ye bölünür.
                      n
                   /    \
@@ -77,7 +77,7 @@ gibi bir formülasyon ortaya çıkar. Sürekli 2'ye bölünerek devam edeceği i
 Birleştirme aşaması: Daha sonra, bu küçük parçalar, sıralanmış bir dizi oluşturmak üzere birleştirilir. Her bir birleştirme işlemi, en kötü durumda, her elemanın bir kez karşılaştırılmasını gerektirir, 
 bu da birleştirme işleminin lineer zaman karmaşıklığına (n) sahip olacağı anlamına gelir.
 Bu sebeple O(nlogn) olur. 
-</div>
+
 
 
 
