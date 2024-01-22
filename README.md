@@ -65,13 +65,14 @@ Bir araya getirilir: [6,8,11,12,21,22]
 
 
 
-|### b)Big-O gösterimini yazınız.|
+### b)Big-O gösterimini yazınız.
 Bu yöntemde dizi eleman sayısına n denirse dizi 2'ye bölünerek daha sonra tek eleman kalana kadar 2'ye bölünür.
-                     n
-                  /    \
-                n/2      n/2
-               /  \      / \
-             n/2  n/2  n/2  n/2
+                      n
+                  /      \
+                n/2   -   n/2
+               /   \      /  \
+             n/2 - n/2  n/2 - n/2
+             
 gibi bir formülasyon ortaya çıkar. Sürekli 2'ye bölünerek devam edeceği için 2^x=n olur 
 2^x=n --> x= logn olur.(2 tabanında) -->logn kere işlem yapılıyor demektir.
 Birleştirme aşaması: Daha sonra, bu küçük parçalar, sıralanmış bir dizi oluşturmak üzere birleştirilir. Her bir birleştirme işlemi, en kötü durumda, her elemanın bir kez karşılaştırılmasını gerektirir, 
