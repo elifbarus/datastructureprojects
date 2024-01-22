@@ -67,8 +67,9 @@ Bir araya getirilir: [6,8,11,12,21,22]
 
 ### b)Big-O gösterimini yazınız.
 Bu yöntemde dizi eleman sayısına n denirse dizi 2'ye bölünerek daha sonra tek eleman kalana kadar 2'ye bölünür.
-                      n
-                  /      \
+<br>
+                     n
+                   /    \
                 n/2      n/2
                /   \      /  \
              n/2 - n/2  n/2 - n/2
