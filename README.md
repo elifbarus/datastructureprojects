@@ -36,9 +36,11 @@ Burada dizinin elemanları en küçük eleman sırayla yer değiştirir. Bu işl
 Diziyi bir anda sıralamak yerine küçük parçalara ayırarak sıralarsak. Daha iyi performans kazancı sağlarız ve çalışma süresi kısalır.
 
 #### 1. adım önce dizi ortadan bölünür, dizi tek sayılı elemana sahip ortadaki elemanı sola da sağa da konulabilir.
+````
     [16,21,11,8,12,22]
       /           \
-[16,21,11]   -  [8,12,22] 
+[16,21,11]   -  [8,12,22]
+''''
 #### 2. adım dizi tekrar bölünür ben ortadaki elemanları sol diziye koymayı tercih ettim.
        [16,21,11,8,12,22]
           /            \
