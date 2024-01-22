@@ -3,6 +3,7 @@
 ## Soru 1) [22,27,16,2,18,6] -> Insertion Sort
 
 ### a) Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+````
 "|" işaretinin sol tarafı sıralı, sağ tarafı sıralanmamış kabul edilir. Soldan sağa ilerlenerek en küçük eleman dizinin başına, en küçük ikinci eleman, ilk elemanın sağına yerleştirilir.
 Bu mantık dizideki elemanlar bitene kadar tekrarlanır ve dizi sıralı hale gelmiş olur.
 1. adım [22|27,16,2,18,6] 22<27 olduğundan dizi aynı kaldı.
@@ -10,31 +11,36 @@ Bu mantık dizideki elemanlar bitene kadar tekrarlanır ve dizi sıralı hale ge
 3. adım [16,22,27|2,18,6] --> [2,16,22,27,18,6]  (2<27, 2 önce 27 elemanı ile yer değiştirdi. 2<22, daha sonra 22 elemanı ile yer değiştirdi. 2<16, daha sonra 16 elemanı ile yer değiştirdi. Dizi 4. elemana kadar sıralandı.)
 4. adım [2,16,22,27|18,6] --> [2,16,18,22,27,6]  (18<27, 2 önce 27 elemanı ile yer değiştirdi. 18<22, daha sonra 22 elemanı ile yer değiştirdi. 18>16 olduğu için yer değiştirmedi. Dizi 5. elemana kadar sıralandı.)
 5. adım [2,16,18,22,27,6] --> [2,6,16,18,22,27]  (6<27, 6<22, 6<18, 6<16, 6<16 ve 6>2 olduğu için 2. eleman konumuna geldi. Dizi küçükten büyüğe sıralandı.
-   
+````   
 ### b) Big-O gösterimini yazınız.
+````
 Big O notation algoritmanın performansını ya da time complexity(algoritmanın çalışması için gerekli süreyi) hesaplarken kullanılır. Algoritma çalışma süresi bulunduktan sonra, en yüksek dereceli terim big o notation olur.
 Burada time complexity süresi zaman olarak değil işlem sayısı olarak ölçülür. Dolayısıyla bizim dizimizde tüm eleman sayısına n denirse, ilk sırada n, sonra n-1, daha sonra n-2... kadar işlem yapılacağı için 
 n+(n-1)+(n-2)... işlemini hesaplamak için [n x (n+1)]/2 formülü kullanılır. (n^2+n)/2 sonucunun en yüksek dereceli terimi n^2 dir. 
 Bu sebeple big o notation O(n^2) olur.
+````
 
 ### c) Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
-18 sayısı dizinin ortasında olduğu için Average case.
+````18 sayısı dizinin ortasında olduğu için Average case.````
 
 ## d) [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+````
 Burada dizinin elemanları en küçük eleman sırayla yer değiştirir. Bu işleme ilk elemandan başlanır, yeri değişecek küçük elemanın yerine yer değiştirdiğimiz büyük sayı geçer. Dizi sıralanana kadar işlem tekrarlanır.
 1. adım [7,3,5,8,2,9,4,15,6] --> [2,3,5,8,7,9,4,15,6] (2 elemanı artık sıralandı en başa geldi ona sonraki işlemlerde bakılmaz.)
 2. adım [2,3,5,8,7,9,4,15,6] --> [2,3,5,8,7,9,4,15,6] (3 elemanı kalan elemanlar arasında en küçük bu sebeple yeri değişmez sıralanmış olur.)
 3. adım [2,3,5,8,7,9,4,15,6] --> [2,3,4,8,7,9,5,15,6]
 4. adım [2,3,4,8,7,9,5,15,6] --> [2,3,4,5,7,9,8,15,6]
-5. ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+````
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #PROJE 2 Merge Sort
 
 ## [16,21,11,8,12,22] -> Merge Sort
 
 ### a)Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+````
 Diziyi bir anda sıralamak yerine küçük parçalara ayırarak sıralarsak. Daha iyi performans kazancı sağlarız ve çalışma süresi kısalır.
-
+````
 #### 1. adım önce dizi ortadan bölünür, dizi tek sayılı elemana sahip ortadaki elemanı sola da sağa da konulabilir.
 ````
     [16,21,11,8,12,22]
